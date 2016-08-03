@@ -1,0 +1,7 @@
+<h1><%= metadata.title %> <small>by <%= metadata.author %></h1>
+<ul>
+    <% metadata.tags.forEach(function (c) { %>
+        <li><%= c %>
+    <% }); %>
+</ul>
+<div><%- html %></div>

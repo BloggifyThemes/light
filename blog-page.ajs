@@ -1,0 +1,5 @@
+<ul>
+    <% articles.forEach(function (c) { %>
+        <li><%= c.metadata.title %></li>
+    <% }); %>
+</ul>
