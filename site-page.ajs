@@ -1,7 +1,11 @@
-<h1><%= metadata.title %> <small>by <%= metadata.author %></h1>
-<ul>
-    <% metadata.tags.forEach(function (c) { %>
-        <li><%= c %>
-    <% }); %>
-</ul>
-<div><%- html %></div>
+<% include("header") %>
+<% include("top") %>
+
+<div class="container">
+    <div class="content markdown">
+        <h1 class="article-title"><%= content.metadata.title %></h1>
+        <div class="markdown"><%- content.html %></div>
+    </div>
+</div>
+
+<% include("footer") %>
