@@ -1,6 +1,6 @@
 <% title = "Blog"; %>
-<% include("header") %>
-<% include("top") %>
+<% include("includes/header") %>
+<% include("includes/top") %>
 
 <div class="content">
     <% articles.forEach(function (c) { %>
@@ -34,4 +34,4 @@
     <% }); %>
 </div>
 
-<% include("footer") %>
+<% include("includes/footer") %>

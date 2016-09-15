@@ -1,8 +1,8 @@
-<% include("header") %>
+<% include("includes/header") %>
 <div class="top-header">
     <a href="/">
-        <img src="/images/article-img.png" />
-        <h1><%- Bloggify.options.metadata.siteTitle %></h1>
+        <img src="<%= _public('/images/article-img.png') %>" />
+        <h1><%- siteMetadata.siteTitle %></h1>
     </a>
 </div>
 <div class="container">
@@ -40,4 +40,4 @@
     </div>
 </div>
 
-<% include("footer") %>
+<% include("includes/footer") %>

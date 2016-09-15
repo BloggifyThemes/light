@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="<%= _public('css/style.css') %>" />
-        <link rel="icon" href="/favicon.ico" />
-        <title><%= title %> | <%= Bloggify.options.metadata.siteTitle %></title>
+        <link rel="icon" href="<%= _public('/favicon.ico') %>" />
+        <title><%= title %> | <%= siteMetadata.siteTitle %></title>
     </head>
     <body>
         <div class="page-container">

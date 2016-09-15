@@ -1,5 +1,5 @@
-<% include("header") %>
-<% include("top") %>
+<% include("includes/header") %>
+<% include("includes/top") %>
 
 <div class="container">
     <div class="content markdown">
@@ -8,4 +8,4 @@
     </div>
 </div>
 
-<% include("footer") %>
+<% include("includes/footer") %>

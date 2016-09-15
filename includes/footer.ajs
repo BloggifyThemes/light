@@ -1,11 +1,12 @@
         </div>
+        <% if (typeof hideFooter === "undefined") { %>
         <footer>
             <div class="container">
                 <%
                     var now = new Date();
                     var year = now.getFullYear();
                 %>
-                <div class="footer text-center">&copy; <%= (year).toString() %> • <%- Bloggify.options.metadata.siteTitle %> • Created with JavaScript and <i class="fa fa-heart pulse"></i> from
+                <div class="footer text-center">&copy; <%= (year).toString() %> • <%- siteMetadata.siteTitle %> • Created with JavaScript and <i class="fa fa-heart pulse"></i> from
                     Romania. Powered by <a href="http://bloggify.github.com">Bloggify</a>.
 
                     <br>Sponsored by <a href="http://brightbox.com/">Brightbox</a>.
@@ -13,5 +14,6 @@
                 </div>
             </div>
         </footer>
+        <% } %>
     </body>
 </html>
