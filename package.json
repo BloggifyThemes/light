@@ -30,10 +30,9 @@
     "resources/",
     "menu/",
     "scripts/",
-    "includes/",
+    "views/",
     "public/",
     "cli.js",
-    "index.js",
-    "*.ajs"
+    "index.js"
   ]
 }
