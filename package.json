@@ -1,0 +1,37 @@
+{
+  "name": "bloggify-theme-light",
+  "version": "1.0.0",
+  "description": "A light and simple theme for Bloggify.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BloggifyThemes/light.git"
+  },
+  "keywords": [
+    "bloggify",
+    "theme",
+    "light"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BloggifyThemes/light/issues"
+  },
+  "homepage": "https://github.com/BloggifyThemes/light#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "scripts/",
+    "cli.js",
+    "index.js"
+  ],
+  "bin": null
+}
