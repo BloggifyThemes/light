@@ -1,6 +1,6 @@
 {
   "name": "bloggify-theme-light",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A light and simple theme for Bloggify.",
   "main": "lib/index.js",
   "scripts": {
@@ -30,8 +30,9 @@
     "resources/",
     "menu/",
     "scripts/",
+    "includes/",
     "cli.js",
-    "index.js"
-  ],
-  "bin": null
+    "index.js",
+    "*.ajs"
+  ]
 }
