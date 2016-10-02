@@ -1,4 +1,5 @@
 <% include("includes/header") %>
+
 <div class="top-header">
     <a href="/">
         <img src="<%= _public('/images/article-img.png') %>" />
@@ -7,28 +8,28 @@
 </div>
 <div class="container">
     <div class="content single-article">
-        <h1 class="article-title"><%= article.metadata.title %></h1>
-        <% if (article.metadata.date || article.metadata.author) { %>
+        <h1 class="article-title"><%= page.title %></h1>
+        <% if (page.date || page.author) { %>
             <p class="article-date">
                 <i class="fa fa-calendar"></i>
-                <% if (article.metadata.date) { %>
-                Posted on <%= article.metadata.date %>
+                <% if (page.date) { %>
+                Posted on <%= page.date %>
                 <% } %>
-                <% if (article.metadata.author) { %>
-                by <a href="/"><%= article.metadata.author %></a>
+                <% if (page.author) { %>
+                by <a href="/"><%= page.author %></a>
                 <% } %>
             </p>
         <% } %>
-        <% if (article.metadata.tags && article.metadata.tags.length) { %>
+        <% if (page.tags && page.tags.length) { %>
             <p class="article-tags">
                 <i class="fa fa-tags"></i> Tagged as:
-                <% article.metadata.tags.forEach(function (c, i, arr) { %>
+                <% page.tags.forEach(function (c, i, arr) { %>
                     <span class="tag"><%= c %></span><%= i === arr.length - 1 ? "" : "," %>
                 <% }) %>
             </p>
         <% } %>
 
-        <div class="markdown"><%- article.html %></div>
+        <div class="markdown"><%- page.html %></div>
 
         <div class="blog-feedback">
             <p class="blog-feedback-header">Have feedback on this article? Let <a href="https://twitter.com/intent/tweet?text=@IonicaBizau%20&amp;amp;related=IonicaBizau&amp;url=http://ionicabizau.net/blog/28-how-i-ported-memory-blocks-to-modern-web"

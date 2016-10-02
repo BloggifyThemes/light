@@ -3,7 +3,7 @@
 <% include("includes/top") %>
 
 <div class="content">
-    <% articles.forEach(function (c) { %>
+    <% page.articles.forEach(function (c) { %>
         <div class="article">
             <a href="<%= c.path %>" class="article-title">
                 <h1><%= c.metadata.title %></h1>
