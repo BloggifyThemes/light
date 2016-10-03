@@ -6,18 +6,18 @@
     <% page.articles.forEach(function (c) { %>
         <div class="article">
             <a href="<%= c.path %>" class="article-title">
-                <h1><%= c.metadata.title %></h1>
+                <h1><%= c.title %></h1>
             </a>
             <div class="article-info">
-                <% if (c.metadata.date) { %>
-                <span class="date"></span>
+                <% if (c.date) { %>
+                <span class="date"><%= c.date.format("LLL") %></span>
                 <% } %>
-                <% if (c.metadata.author) { %>
-                by Ionică Bizău
+                <% if (c.author) { %>
+                <span class="date"><%= c.author %></span>
                 <% } %>
-                <% if (c.metadata.tags && c.metadata.tags.length) { %>
+                <% if (c.tags && c.tags.length) { %>
                     <span class="tags">
-                    <% c.metadata.tags.forEach(function (cTag) { %>
+                    <% c.tags.forEach(function (cTag) { %>
                         | <span><%= cTag %></span>
                     <% }); %>
                     </span>
