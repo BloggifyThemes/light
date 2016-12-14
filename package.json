@@ -1,6 +1,6 @@
 {
   "name": "bloggify-theme-light",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A light and simple theme for Bloggify.",
   "main": "lib/index.js",
   "scripts": {
@@ -36,15 +36,15 @@
     "index.js"
   ],
   "bloggify": {
-      "templates": [
-        "views/404.ajs",
-        "views/500.ajs",
-        "views/article.ajs",
-        "views/blog-page.ajs",
-        "views/site-page.ajs"
-      ],
-      "styles": [
-          "public/css/style.css"
-      ]
+    "templates": [
+      "views/404.ajs",
+      "views/500.ajs",
+      "views/article.ajs",
+      "views/blog-page.ajs",
+      "views/site-page.ajs"
+    ],
+    "styles": [
+      "public/css/style.css"
+    ]
   }
 }
