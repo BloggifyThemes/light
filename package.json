@@ -34,5 +34,17 @@
     "public/",
     "cli.js",
     "index.js"
-  ]
+  ],
+  "bloggify": {
+      "templates": [
+        "views/404.ajs",
+        "views/500.ajs",
+        "views/article.ajs",
+        "views/blog-page.ajs",
+        "views/site-page.ajs"
+      ],
+      "styles": [
+          "public/css/style.css"
+      ]
+  }
 }

@@ -30,14 +30,6 @@
         <% } %>
 
         <div class="markdown"><%- page.html %></div>
-
-        <div class="blog-feedback">
-            <p class="blog-feedback-header">Have feedback on this article? Let <a href="https://twitter.com/intent/tweet?text=@IonicaBizau%20&amp;amp;related=IonicaBizau&amp;url=http://ionicabizau.net/blog/28-how-i-ported-memory-blocks-to-modern-web"
-                target="blank">@IonicaBizau</a> know on Twitter.</p>
-            <p class="blog-feedback-description">Have any questions or suggestions? <a href="/contact">Contact me.</a> Found
-                a bug? <a href="https://github.com/Bloggify/Bloggify/issues/new">Report it now</a>
-            </p>
-        </div>
     </div>
 </div>
 

@@ -57,12 +57,7 @@
         <meta name="twitter:title" content="<%= title %>">
         <meta name="twitter:description" content="<%= description %>">
 
-        <!-- Google -->
-        <link href="https://plus.google.com/+YourPage" rel="publisher">
-        <meta itemprop="name" content="<%= title %>">
-        <meta itemprop="description" content="<%= description %>">
-
-        <link rel="stylesheet" href="<%= _public('css/style.css') %>" />
+        <%- Bloggify.assets.html() %>
     </head>
     <body>
         <div class="page-container">
