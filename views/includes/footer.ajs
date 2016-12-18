@@ -7,7 +7,7 @@
                     var year = now.getFullYear();
                 %>
                 <div class="footer text-center">&copy; <%= (year).toString() %> • <%- siteMetadata.siteTitle %> • Created with JavaScript and <i class="fa fa-heart pulse"></i> from
-                    Romania. Powered by <a href="http://bloggify.github.com">Bloggify</a>.
+                    Romania. Powered by <a href="https://bloggify.org">Bloggify</a>.
 
                     <br>Sponsored by <a href="http://brightbox.com/">Brightbox</a>.
                     <h1 class="text-center social">

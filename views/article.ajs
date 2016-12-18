@@ -13,7 +13,7 @@
             <p class="article-date">
                 <i class="fa fa-calendar"></i>
                 <% if (page.date) { %>
-                Posted on <%= page.date %>
+                Posted on <%= page.date.format("dddd, MMMM D YYYY") %>
                 <% } %>
                 <% if (page.author) { %>
                 by <a href="/"><%= page.author %></a>

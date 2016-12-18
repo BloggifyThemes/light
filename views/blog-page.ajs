@@ -11,10 +11,10 @@
             </a>
             <div class="article-info">
                 <% if (c.date) { %>
-                <span class="date"><%= c.date.format("LLL") %></span>
+                <span class="date"><%= c.date.format("dddd, MMMM D YYYY") %></span>
                 <% } %>
                 <% if (c.author) { %>
-                <span class="date"><%= c.author %></span>
+                <span class="author"><%= c.author %></span>
                 <% } %>
                 <% if (c.tags && c.tags.length) { %>
                     <span class="tags">
