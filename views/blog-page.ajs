@@ -4,6 +4,7 @@
 
 <div class="content">
     <% page.articles.forEach(function (c) { %>
+    <% if (c.visible === false) { return; } %>
         <div class="article">
             <a href="<%= c.path %>" class="article-title">
                 <h1><%= c.title %></h1>
@@ -32,6 +33,16 @@
             </a>
         </div>
     <% }); %>
+    <% if (page.newerArticles|| page.olderArticles) { %>
+        <div class="pagination">
+            <% if (page.newerArticles) { %>
+                <a href="<%= page.newerArticles %>" class="page prev"><i class="fa fa-angle-left"></i> Newer articles</a>
+            <% } %>
+            <% if (page.olderArticles) { %>
+                <a href="<%= page.olderArticles %>" class="page next">Older articles <i class="fa fa-angle-right"></i></a>
+            <% } %>
+        </div>
+    <% } %>
 </div>
 
 <% include("includes/footer") %>
