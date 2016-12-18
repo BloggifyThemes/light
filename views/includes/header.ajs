@@ -33,13 +33,13 @@
         <meta property="og:title" content="<%= title %>">
 
         <% if (ogImage) { %>
-        <meta property="og:image" content="<%= ogImage %>">
-        <meta name="twitter:image" content="<%= ogImage %>">
-        <meta itemprop="image" content="<%= ogImage %> ">
+            <meta property="og:image" content="<%= ogImage %>">
+            <meta name="twitter:image" content="<%= ogImage %>">
+            <meta itemprop="image" content="<%= ogImage %> ">
         <% } %>
 
         <% if (page.author) { %>
-        <meta name="article:author" content="<%= page.author %>">
+            <meta name="article:author" content="<%= page.author %>">
         <% } %>
 
         <meta property="og:site_name" content="<%= siteMetadata.siteTitle %>">
