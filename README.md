@@ -29,6 +29,7 @@ Thanks! :heart:
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 
+ - [`bloggify-bloggify-quick-start`](https://github.com/Bloggify/bloggify-quick-start#readme)—A simple example of a Bloggify app.
  - [`bloggify-starter`](https://github.com/Bloggify/starter#readme)—A simple example of a Bloggify app.
 
 ## :scroll: License

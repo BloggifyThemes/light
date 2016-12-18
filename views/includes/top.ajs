@@ -5,7 +5,7 @@
         <h2><%- siteMetadata.description %></h2>
     </div>
     <ul class="pages text-center">
-        <% Bloggify.adapter.getAllPages(function (err, pages) { %>
+        <% Bloggify.getPages(function (err, pages) { %>
             <% pages.forEach(function (cPage) { %>
                 <li class="page <%= lien.path === cPage.path ? 'active' : '' %>">
                     <a href="<%= cPage.path %>">
