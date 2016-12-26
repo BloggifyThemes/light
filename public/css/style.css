@@ -21,14 +21,14 @@ a {
     color: #2980b9;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 a:hover {
     color: #3498db;
 }
 
-.header {
+.header, ul.pages {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -276,6 +276,7 @@ p.blog-feedback-description {
 .contact-form,
 .contact-form input,
 .contact-form textarea,
+ul, ol,
 p {
     font-family: 'Gentium Book Basic', serif;
     font-size: 20px;

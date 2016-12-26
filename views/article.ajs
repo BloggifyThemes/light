@@ -30,6 +30,14 @@
         <% } %>
 
         <div class="markdown"><%- page.html %></div>
+
+        <% if (Bloggify.options.theme.social.twitter) { %>
+            <div class="blog-feedback">
+                <% var twUsername = Bloggify.options.theme.social.twitter; %>
+                <p class="blog-feedback-header">Have feedback on this article? Let <a href="https://twitter.com/intent/tweet?text=@<%= twUsername %>%20<%= lien.href %>">@<%= twUsername %></a> know on Twitter.</p>
+                <p class="blog-feedback-description">Have any questions? Feel free to ping me on Twitter.</p>
+            </div>
+        <% } %>
     </div>
 </div>
 

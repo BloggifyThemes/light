@@ -45,6 +45,9 @@
     ],
     "styles": [
       "public/css/style.css"
-    ]
+    ],
+    "config": {
+      "social": {}
+    }
   }
 }
