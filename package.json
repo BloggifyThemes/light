@@ -46,7 +46,7 @@
     "styles": [
       "public/css/style.css"
     ],
-    "config": {
+    "data": {
       "social": {}
     }
   }
