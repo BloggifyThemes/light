@@ -1,0 +1,19 @@
+{
+    "styles": [
+      "public/css/style.css"
+    ],
+    "config": {
+        "options": {
+            "defaultOgImage": "",
+            "ga": null,
+            "social": {}
+        },
+        "templates": [
+            "views/404.ajs",
+            "views/500.ajs",
+            "views/article.ajs",
+            "views/blog_page.ajs",
+            "views/site_page.ajs"
+        ]
+    }
+}

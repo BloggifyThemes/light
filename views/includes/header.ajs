@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <%
-            var description = page.summary || siteMetadata.description;
-            var ogImage = _public(page.image || Bloggify.options.theme.defaultOgImage, true);
-            var googleAnalytics = Bloggify.options.theme.ga;
+            var description = page.summary || Bloggify.options.description;
+            var ogImage = _public(page.image || theme.defaultOgImage, true);
+            var googleAnalytics = theme.ga;
         %>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><%= title %> | <%= siteMetadata.siteTitle %></title>
+        <title><%= title %> | <%= Bloggify.options.title %></title>
 
-        <meta name="application-name" content="<%= siteMetadata.siteTitle %>">
+        <meta name="application-name" content="<%= Bloggify.options.title %>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <% if (googleAnalytics) { %>
@@ -34,7 +34,7 @@
         <meta name="google" content="nositelinkssearchbox">
         <meta name="subject" content="<%= description %>">
         <meta name="abstract" content="<%= description %>">
-        <meta name="url" content="<%= siteMetadata.domain %>">
+        <meta name="url" content="<%= Bloggify.options.domain %>">
         <meta name="directory" content="submission">
         <meta name="rating" content="General">
 
@@ -54,15 +54,15 @@
             <meta name="article:author" content="<%= page.author %>">
         <% } %>
 
-        <meta property="og:site_name" content="<%= siteMetadata.siteTitle %>">
+        <meta property="og:site_name" content="<%= Bloggify.options.title %>">
         <meta property="og:locale" content="en_US">
         <meta property="og:description" content="<%= description %>">
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary">
 
-        <% if (siteMetadata.twitter) { %>
-            <meta name="twitter:site" content="<%= siteMetadata.twitter %>">
+        <% if (theme.twitter) { %>
+            <meta name="twitter:site" content="<%= theme.twitter %>">
         <% } %>
 
         <meta name="twitter:url" content="<%= lien.href %>">

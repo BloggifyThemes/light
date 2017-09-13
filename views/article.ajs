@@ -3,7 +3,7 @@
 <div class="top-header">
     <a href="/">
         <img src="<%= _public('/images/article-img.png') %>" />
-        <h1><%- siteMetadata.siteTitle %></h1>
+        <h1><%- Bloggify.options.title %></h1>
     </a>
 </div>
 <div class="container">
@@ -31,9 +31,9 @@
 
         <div class="markdown"><%- page.html %></div>
 
-        <% if (Bloggify.options.theme.social.twitter) { %>
+        <% if (theme.social.twitter) { %>
             <div class="blog-feedback">
-                <% var twUsername = Bloggify.options.theme.social.twitter; %>
+                <% var twUsername = theme.social.twitter; %>
                 <p class="blog-feedback-header">Have feedback on this article? Let <a href="https://twitter.com/intent/tweet?text=@<%= twUsername %>%20<%= lien.href %>">@<%= twUsername %></a> know on Twitter.</p>
                 <p class="blog-feedback-description">Have any questions? Feel free to ping me on Twitter.</p>
             </div>

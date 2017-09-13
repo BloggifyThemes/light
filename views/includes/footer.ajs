@@ -6,12 +6,12 @@
                     var now = new Date();
                     var year = now.getFullYear();
                 %>
-                <div class="footer text-center">&copy; <%= (year).toString() %> • <%- siteMetadata.siteTitle %> • Created with JavaScript and <i class="fa fa-heart pulse"></i> from
+                <div class="footer text-center">&copy; <%= (year).toString() %> • <%- Bloggify.options.title %> • Created with JavaScript and <i class="fa fa-heart pulse"></i> from
                     Romania. Powered by <a href="https://bloggify.org">Bloggify</a>.
 
                     <br>Sponsored by <a href="http://brightbox.com/">Brightbox</a>.
                     <h1 class="text-center social">
-                        <% var socialLinks = Bloggify.options.theme.social || {}; %>
+                        <% var socialLinks = theme.social; %>
                         <% if (socialLinks.github) { %>
                             <a href="http://github.com/<%= socialLinks.github %>" target="blank">
                                 <i class="fa fa-github-alt"></i>
