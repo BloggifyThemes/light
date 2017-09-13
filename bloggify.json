@@ -1,6 +1,6 @@
 {
     "styles": [
-      "public/css/style.css"
+      "lib/assets/css/style.css"
     ],
     "config": {
         "options": {
