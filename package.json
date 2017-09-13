@@ -15,7 +15,6 @@
     "theme",
     "light"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BloggifyThemes/light/issues"
@@ -27,12 +26,13 @@
     "lib/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
-    "views/",
-    "public/",
     "cli.js",
-    "index.js"
-  ]
+    "index.js",
+    "bloggify.js",
+    "bloggify.json"
+  ],
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)"
 }
